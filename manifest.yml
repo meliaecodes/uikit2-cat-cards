@@ -1,0 +1,21 @@
+modules:
+  macro:
+    - key: flexbox-patterns-macro-hello-world-macro
+      resource: main
+      render: native
+      resolver:
+        function: resolver
+      title: flexbox-patterns-macro
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  id: ari:cloud:ecosystem::app/28d80987-977b-4509-99e9-be20408baf2c
+permissions:
+  scopes: []
+  external:
+    images:
+      - i.imgur.com
